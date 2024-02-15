@@ -34,6 +34,7 @@ const Signup = () => {
           .finally(() => setLoading(false));
       })
       .catch((err) => {
+        setLoading(false);
         setError(err.message);
       });
   };
